@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Irene Mae P. Dimasacupan | Portfolio</title>
+<meta name="description" content="Portfolio of Irene Mae P. Dimasacupan, BSIT student who loves technology, designing, and editing videos and photos.">
+<meta property="og:title" content="Irene Mae P. Dimasacupan | Portfolio">
+<meta property="og:description" content="Simple and clean designs, works and skills.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23fff' stroke='%23111' stroke-width='6'/%3E%3Cpath d='M26 68V32L50 54 74 32V68' fill='none' stroke='%23111' stroke-width='8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600&family=Lora:wght@400;700&family=Bricolage+Grotesque:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="canvas">
+ <header class="bar">
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+  <nav class="nav" id="nav" aria-label="Main">
+   <a class="pill" href="#home">HOME</a><a class="pill" href="#about">ABOUT</a><a class="pill" href="#skills">SKILLS</a><a class="pill" href="#contact">CONTACT</a>
+  </nav>
+  <form class="search" id="sf" role="search" onsubmit="return false">
+   <input id="q" type="search" placeholder="Search this portfolio" aria-label="Search this portfolio" autocomplete="off">
+   <button class="ib" aria-label="Search">&#128269;</button>
+  </form>
+ </header>
+ <p id="none" role="status">Nothing matched. Try "CapCut", "photo" or "contact".</p>
+
+ <main>
+ <section id="home" class="hero rv">
+  <svg class="logo" viewBox="0 0 100 100" role="img" aria-label="Monogram M logo"><circle cx="50" cy="50" r="46" fill="#fff" stroke="#111" stroke-width="4"/><polygon points="50,12 82,31 82,69 50,88 18,69 18,31" fill="none" stroke="#111" stroke-width="3"/><path d="M30 66V34L50 54 70 34V66" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round"/></svg>
+  <div><h1 id="hTitle"></h1><p id="hText"></p></div>
+  <span class="hx h1" aria-hidden="true"></span><span class="hx o h2" aria-hidden="true"></span><span class="hx h3" aria-hidden="true"></span><span class="hx o h4" aria-hidden="true"></span>
+ </section>
+
+ <section id="about" class="hud grid rv"><svg class="circ top" viewBox="0 0 1000 50" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,0 190,0 160,16 0,16" fill="#111"/><polygon points="935,0 1000,0 1000,16 915,16" fill="#111"/><g fill="none" stroke="#111" stroke-width="1.5"><path d="M0 34H140L165 20H520L545 34H1000"/><path d="M0 44H60L75 38H430"/><path d="M600 44H940L955 38H1000"/></g></svg><div class="about">
+  <p id="aText"></p>
+  <figure><img id="aPhoto" class="ph" alt="Portrait of Irene Mae P. Dimasacupan" width="300" height="315"><figcaption id="aName"></figcaption></figure>
+ </div><svg class="circ bot" viewBox="0 0 1000 50" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,0 190,0 160,16 0,16" fill="#111"/><polygon points="935,0 1000,0 1000,16 915,16" fill="#111"/><g fill="none" stroke="#111" stroke-width="1.5"><path d="M0 34H140L165 20H520L545 34H1000"/><path d="M0 44H60L75 38H430"/><path d="M600 44H940L955 38H1000"/></g></svg></section>
+
+ <section id="skills" class="panel rv"><div class="frame sk"><div class="inner grid"><h2 class="sr">Skills</h2><ul class="cards" id="cards"></ul><svg class="circ bot" viewBox="0 0 1000 50" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,0 190,0 160,16 0,16" fill="#111"/><polygon points="935,0 1000,0 1000,16 915,16" fill="#111"/><g fill="none" stroke="#111" stroke-width="1.5"><path d="M0 34H140L165 20H520L545 34H1000"/><path d="M0 44H60L75 38H430"/><path d="M600 44H940L955 38H1000"/></g></svg></div></div></section>
+
+ <section id="contact" class="contact rv">
+  <span class="hx o cxo" aria-hidden="true"></span><span class="cx" aria-hidden="true"></span>
+  <p class="note" id="cNote"></p>
+  <form id="cf" novalidate>
+   <label class="sr" for="em">Your email</label><input id="em" name="email" type="email" placeholder="CONTACT (your email)" autocomplete="email"><small class="err" id="e1"></small>
+   <label class="sr" for="ms">Message</label><textarea id="ms" name="message" placeholder="Messages"></textarea><small class="err" id="e2"></small>
+   <input class="hp" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+   <button id="send" type="submit">Send</button><p id="st" role="status"></p>
+  </form>
+  <div class="soc">
+   <a id="sFb" target="_blank" rel="noopener noreferrer"><span class="ic" style="background:#1877f2" aria-hidden="true">f</span><span class="tag">FACEBOOK</span></a>
+   <a id="sIg" target="_blank" rel="noopener noreferrer"><span class="ic" style="background:linear-gradient(45deg,#f9a03c,#d6249f,#5851db)" aria-hidden="true">&#9711;</span><span class="tag">INSTAGRAM</span></a>
+   <a id="sGm"><span class="ic" style="background:#fff;color:#d93025;border-radius:4px" aria-hidden="true">M</span><span class="tag">GMAIL</span></a>
+  </div>
+  <span class="foot1" aria-hidden="true"></span><span class="foot2" aria-hidden="true"></span>
+ </section>
+ </main>
+</div>
+
+<dialog id="md"><button class="x" id="mx" aria-label="Close">&times;</button><div id="mm"></div><h3 id="mt"></h3><p id="mp"></p></dialog>
+<button id="gear">Edit site</button><aside id="panel" aria-label="Site settings"></aside>
+
+<script src="js/main.js"></script>
+</body>
+</html>
